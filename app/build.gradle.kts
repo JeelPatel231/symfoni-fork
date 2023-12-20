@@ -30,6 +30,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    viewBinding {
+        enable = true
+    }
+
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -46,6 +52,7 @@ dependencies {
     implementation("xyz.gianlu.librespot:librespot-lib:1.6.3")
 
     implementation("androidx.media3:media3-exoplayer:1.2.0")
+    implementation("androidx.media3:media3-ui:1.2.0")
 
 
     testImplementation("junit:junit:4.13.2")
